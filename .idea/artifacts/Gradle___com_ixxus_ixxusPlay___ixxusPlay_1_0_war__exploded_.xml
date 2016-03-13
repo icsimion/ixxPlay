@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com.ixxus:ixxusPlay : ixxusPlay-1.0.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/ixxusPlay/exploded/ixxusPlay-1.0.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ixxusPlay/web/Web Gradle : ixxusPlay-1.0.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ixxusPlay" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Gradle: org.apache.velocity:velocity:1.7" />
+          <element id="library" level="project" name="Gradle: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Gradle: commons-lang:commons-lang:2.4" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.2.5.RELEASE/72db9c52e8bd2dc3290cd51114583731f818356b/spring-context-support-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.5.RELEASE/7395321fe937272d9b781a13985e04ab2dcd6210/spring-tx-4.2.5.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/ixxusPlay/exploded/ixxusPlay-1.0.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
