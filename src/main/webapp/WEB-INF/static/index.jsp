@@ -45,36 +45,27 @@
 <head>
     <title>Gradle + Spring MVC</title>
 
-    <%--<spring:url value="/resources/core/css/bootstrap.css" var="bootstrapCss"/>--%>
-    <%--<link href="${bootstrapCss}" rel="stylesheet"/>--%>
-
-
     <!-- CSS -->
-    <spring:url value="/resources/app/css/style.css" var="styleCss"/>
+    <spring:url value="/resources/css/app/style.css" var="styleCss"/>
+    <spring:url value="/resources/css/core/bootstrap.css" var="bootstrapCss"/>
     <link href="${styleCss}" rel="stylesheet"/>
+    <link href="${bootstrapCss}" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">
+    <%--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">--%>
 
     <!-- JS -->
     <!-- load angular, nganimate, and ui-router -->
-    <%--<script src="/resources/core/js/angular.js"></script>--%>
-    <%--<script src="/resources/core/js/angular-ui-router.js"></script>--%>
-    <%--<script src="/resources/core/js/angular-animate.js"></script>--%>
+    <spring:url value="/resources/js/core/angular.js" var="angJs" />
+    <spring:url value="/resources/js/core/angular-ui-router.js" var="angUiRouterJs" />
+    <spring:url value="/resources/js/core/angular-animate.js" var="angAnimateJs" />
 
-    <%--<script src="/js/app.js"></script>--%>
-
-    <spring:url value="/resources/core/js/angular.js" var="angJs" />
-    <spring:url value="/resources/core/js/angular-ui-router.js" var="angUiRouterJs" />
-    <spring:url value="/resources/core/js/angular-animate.js" var="angAnimateJs" />
-
-    <spring:url value="/resources/app/js/app.js" var="appJs" />
+    <spring:url value="/resources/js/app/app.js" var="appJs" />
 
     <script src="${angJs}"></script>
     <script src="${angUiRouterJs}"></script>
     <script src="${angAnimateJs}"></script>
 
     <script src="${appJs}"></script>
-
 
 </head>
 </html>

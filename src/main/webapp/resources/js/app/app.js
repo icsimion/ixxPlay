@@ -12,7 +12,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
         // route to show our basic form (/form)
             .state('form', {
                 url: '/form',
-                templateUrl: 'template/form.html',
+                templateUrl: 'resources/template/form.html',
                 controller: 'formController'
             })
 
@@ -21,19 +21,19 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
             // url will be nested (/form/profile)
             .state('form.profile', {
                 url: '/profile',
-                templateUrl: 'template/form-profile.html'
+                templateUrl: 'resources/template/form-profile.html'
             })
 
             // url will be /form/interests
             .state('form.interests', {
                 url: '/interests',
-                templateUrl: 'template/form-interests.html'
+                templateUrl: 'resources/template/form-interests.html'
             })
 
             // url will be /form/payment
             .state('form.payment', {
                 url: '/payment',
-                templateUrl: 'template/form-payment.html'
+                templateUrl: 'resources/template/form-payment.html'
             });
 
         // catch all route
