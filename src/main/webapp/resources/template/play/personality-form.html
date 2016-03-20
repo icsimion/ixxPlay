@@ -1,0 +1,38 @@
+<!-- Play section -->
+<div class="ixx-booth">
+    <div class="container">
+
+        <div class="row content-frame">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div id="form-container">
+                    <!-- the links to our nested states using relative paths -->
+                    <div id="status-buttons" class="text-center">
+                        <p>Press start to begin the personality quiz</p>
+                        <a class="btn btn-success" title="Start" ui-sref=".pq1" ng-click="hideFormHeader() ">Start
+                            Test</a>
+                    </div>
+                    <p id="demo">A Paragraph</p>
+
+
+                </div>
+
+                <!-- use ng-submit to catch the form submission and use our Angular function -->
+                <form id="quiz-form" ng-submit="processPersonalityForm()">
+
+                    <!-- our nested state views will be injected here -->
+                    <div id="form-views" ui-view></div>
+                </form>
+
+            </div>
+
+            <!-- show our formData as it is being typed -->
+            <div class="col-sm-8 col-sm-offset-2">
+        <pre>
+            {{ formData }}
+        </pre>
+            </div>
+
+
+        </div>
+    </div>
+</div>
