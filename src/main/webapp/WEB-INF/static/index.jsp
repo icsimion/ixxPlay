@@ -66,9 +66,11 @@
 
     <spring:url value="/resources/js/app/app.js" var="appJs" />
     <spring:url value="/resources/js/app/controller/controllers.js" var="controllersJs" />
+    <spring:url value="/resources/js/app/service/services.js" var="servicesJs" />
 
     <script src="${appJs}"></script>
     <script src="${controllersJs}"></script>
+    <script src="${servicesJs}"></script>
 
 
 </body>
