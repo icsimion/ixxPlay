@@ -1,8 +1,5 @@
 package com.ixxus.model;
 
-/**
- * Created by simion on 22/03/2016.
- */
 public class Trait {
     private String name;
     private String description;

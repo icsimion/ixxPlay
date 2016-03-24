@@ -1,10 +1,11 @@
 package com.ixxus.repository;
 
 import com.ixxus.model.Trait;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-/**
- * Created by simion on 22/03/2016.
- */
+@Repository
+//@Component
 public class PersonalityRepository {
     private final Trait doer = new Trait("Doer", "You are very quick at getting tasks done. You believe the outcome is the most " +
             "important part of a task and the faster you can reach that outcome the better. After all, time is money.");

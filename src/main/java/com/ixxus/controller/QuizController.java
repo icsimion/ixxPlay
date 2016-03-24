@@ -1,18 +1,20 @@
 package com.ixxus.controller;
 import java.util.Map;
 
+import com.ixxus.model.Personality;
+import com.ixxus.service.PersonalityService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-
-import javax.servlet.http.HttpServletRequest;
 
 @Controller
-//@RequestMapping("/booth")
 
 public class QuizController {
+
+    @Autowired
+    PersonalityService personalityService;  //Service which will do all data retrieval/manipulation work
 
 //    private final Logger logger = LoggerFactory.getLogger(QuizController.class);
 
@@ -50,9 +52,13 @@ public class QuizController {
 //    }
 
     @RequestMapping(method = RequestMethod.POST, value = "/personality")
-    public @ResponseBody String getpersonality(@RequestBody String json) {
-        String jsonData = "[{\"id\":\"3253123\",\"firstname\":\"Chris\",\"lastname\":\"Johnson\",\"address\":\"211, Geoffrey Drive\",\"city\":\"Newark\",\"phone\":\"999-888-6666\",\"email\":\"chrisj@yahoo.com\"},{\"id\":\"67643837\",\"firstname\":\"Bill\",\"lastname\":\"Derkson\",\"address\":\"201, Sleepy Hollow Drive\",\"city\":\"Newark\",\"phone\":\"999-777-2222\",\"email\":\"billd@gmail.com\"}]";
-        return jsonData;
+    public @ResponseBody ResponseEntity<Personality> getPersonality(@RequestBody String answersJson) {
+        Personality personality = personalityService.getPersonality(answersJson);
+
+        return new ResponseEntity<Personality>(personality, HttpStatus.OK);
+
+//        String jsonData = "[{\"id\":\"3253123\",\"firstname\":\"Chris\",\"lastname\":\"Johnson\",\"address\":\"211, Geoffrey Drive\",\"city\":\"Newark\",\"phone\":\"999-888-6666\",\"email\":\"chrisj@yahoo.com\"},{\"id\":\"67643837\",\"firstname\":\"Bill\",\"lastname\":\"Derkson\",\"address\":\"201, Sleepy Hollow Drive\",\"city\":\"Newark\",\"phone\":\"999-777-2222\",\"email\":\"billd@gmail.com\"}]";
+//        return jsonData;
     }
 
 
