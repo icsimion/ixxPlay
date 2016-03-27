@@ -3,21 +3,25 @@
     <div class="container">
 
         <div class="row content-frame">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div id="form-container">
+            <div class="col-sm-2">
+            </div>
+
+
+            <div class="col-sm-8">
+                <div class="form-start" ng-show="isShowPersonalityStart">
                     <!-- the links to our nested states using relative paths -->
                     <div id="status-buttons" class="text-center">
-                        <p>Press start to begin the personality quiz</p>
-                        <a class="btn btn-success" title="Start" ui-sref=".pq1" ng-click="hideFormHeader() ">Start
-                            Test</a>
+                        <p>Press <strong>Start test</strong> to begin the personality quiz</p>
+
+                        <button class="btn btn-lg btn-success" ui-sref=".pq1"
+                                ng-click="startPersonalityForm()">
+                            <span class="glyphicon glyphicon-hand-up"></span> Start test
+                        </button>
                     </div>
-                    <p id="demo">A Paragraph</p>
-
-
                 </div>
 
                 <!-- use ng-submit to catch the form submission and use our Angular function -->
-                <form id="quiz-form" ng-submit="processPersonalityForm()">
+                <form class="quiz-form" ng-submit="processPersonalityForm()" ng-show="isShowPersonalityForm">
 
                     <!-- our nested state views will be injected here -->
                     <div id="form-views" ui-view></div>
@@ -25,13 +29,8 @@
 
             </div>
 
-            <!-- show our formData as it is being typed -->
-            <div class="col-sm-8 col-sm-offset-2">
-        <pre>
-            {{ formData }}
-        </pre>
+            <div class="col-sm-2">
             </div>
-
 
         </div>
     </div>

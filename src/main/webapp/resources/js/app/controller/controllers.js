@@ -1,69 +1,35 @@
 angular.module('boothApp')
 
-    .controller('formController', function ($scope) {
-
-        // we will store all of our form data in this object
-        $scope.formData = {};
-
-        // function to process the form
-        $scope.processForm = function () {
-            alert('awesome!');
-        };
-
-    })
-
     .controller('BoothController', function ($scope) {
-
-        // we will store all of our form data in this object
-        $scope.formData = {};
-
-        // function to process the form
-        $scope.processForm = function () {
-            alert('awesome booth!');
-        };
-
     })
 
+    .controller('PersonalityController', ['$scope', '$http', '$stateParams', '$state', 'personalityService', function ($scope, $http, $stateParams, $state, personalityService) {
 
-    .controller('PersonalityController', ['$scope', '$stateParams', 'personalityService', function($scope, $stateParams, personalityService) {
+        // init form components visibility
+        $scope.isShowPersonalityStart = true;
+        $scope.isShowPersonalityForm = false;
+        $scope.isShowPersonalitySubmit = true;
+        $scope.isShowPersonalityResult = false;
 
         // we will store all of our form data in this object
         $scope.formData = {};
         $scope.personalityResponse = {};
 
         // function to process the form
-        //$scope.processPersonalityForm = personalityService.getPersonalityTraits($scope.formData);
         $scope.processPersonalityForm = function () {
-            alert("processPersonalityForm");
-            return personalityService.getPersonalityTraits($scope.formData);
+            personalityService.async($scope.formData).then(function (d) {
+                $scope.personalityResponse = d;
+            });
+
         }
-        //    alert('awesome booth!');
-        //    $http({
-        //        method: 'POST',
-        //        url: '/personality',
-        //        data: $scope.formData
-        //    })
-        //        .success(function (data) {
-        //            alert('success!' + data);
-        //
-        //            $scope.personalityResponse = data;
-        //            alert($scope.personalityResponse)
-        //        })
-        //        .error(function (data) {
-        //            alert('error!' + data);
-        //            $scope.personalityResponse = data;
-        //        });
-        //
-        //    //$state.go('home.user');
-        //
-        //};
 
-        $scope.hideFormHeader = function () {
-            document.getElementById("demo").innerHTML = "Paragraph changed.";
-            document.getElementById("form-container").style.display = 'none'
-            //$location.path(".pq1"); // path not hash
-
+        $scope.startPersonalityForm = function () {
+            $scope.isShowPersonalityStart = false;
+            $scope.isShowPersonalityForm = true;
         };
-        //}]);
-        //
+
+        $scope.submitPersonalityForm = function () {
+            $scope.isShowPersonalitySubmit = false;
+            $scope.isShowPersonalityResult = true;
+        };
     }]);

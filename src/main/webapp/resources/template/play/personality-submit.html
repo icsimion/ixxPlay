@@ -1,6 +1,46 @@
 <div class="text-center">
-    <span class="glyphicon glyphicon-heart"></span>
-    <h3>Thanks for filling out the form!</h3>
-    <h4>Click Submit and find out what kind of programmer you are!</h4>
-    <button type="submit" class="btn btn-danger">Submit</button>
+
+    <div class="row form-submit" ng-show="isShowPersonalitySubmit">
+        <div class="col-xs-12 col-sm-12">
+            <span class="glyphicon glyphicon-heart"></span>
+            <h3>Thanks for filling out the form!</h3>
+            <h4>Click <strong>Submit</strong> and find out what kind of programmer you are!</h4>
+            <!--<button type="submit" class="btn btn-lg btn-danger">Submit</button>-->
+
+            <button type="submit" class="btn btn-lg btn-danger" ng-click="submitPersonalityForm()">
+                <span class="glyphicon glyphicon-transfer"></span> Submit
+            </button>
+
+        </div>
+    </div>
+
+    <div class="form-result" ng-show="isShowPersonalityResult">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <span class="glyphicon glyphicon-heart"></span>
+                <h4>Results</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h3>{{personalityResponse.plan.name}}</h3>
+                <h5>{{personalityResponse.plan.description}}</h5>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>{{personalityResponse.level.name}}</h3>
+                <h5>{{personalityResponse.level.description}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h3>{{personalityResponse.team.name}}</h3>
+                <h5>{{personalityResponse.team.description}}</h5>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>{{personalityResponse.liberal.name}}</h3>
+                <h5>{{personalityResponse.liberal.description}}</h5>
+            </div>
+        </div>
+    </div>
 </div>
