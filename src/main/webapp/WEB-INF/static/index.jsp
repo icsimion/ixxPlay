@@ -9,41 +9,25 @@
 
 <body ng-app="boothApp">
 
-    <%--<nav class="navbar navbar-inverse navbar-fixed-top">--%>
-        <%--<div class="container">--%>
-            <%--<div class="navbar-header">--%>
-                <%--<a class="navbar-brand" href="#">Project Name</a>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</nav>--%>
+    <div class="booth-header">
+        <div ui-view="header"></div>
+    </div>
 
-    <%--<div class="jumbotron">--%>
-        <%--<div class="container">--%>
-            <%--<h1>${title}</h1>--%>
-            <%--<p>--%>
-                <%--<c:if test="${not empty msg}">--%>
-                    <%--Hello ${msg}--%>
-                <%--</c:if>--%>
+    <div class="booth-content">
+        <div class="content-frame" ui-view="content"></div>
+    </div>
 
-                <%--<c:if test="${empty msg}">--%>
-                    <%--Welcome Welcome!--%>
-                <%--</c:if>--%>
-            <%--</p>--%>
-            <%--<p>--%>
-                <%--<a class="btn btn-primary btn-lg"--%>
-                   <%--href="#" role="button">Learn more</a>--%>
-            <%--</p>--%>
-        <%--</div>--%>
-    <%--</div>--%>
+    <div class="booth-carousel">
+        <div class="carousel-frame">
+            <h3 align="center">Here should be a carousel with important sliding data about Ixxus </h3>
+        </div>
+    </div>
 
-    <div ui-view="header"></div>
-    <div class="content-frame" ui-view="content"></div>
-    <div ui-view="footer"></div>
+    <div class="booth-footer">
+        <div ui-view="footer"></div>
+    </div>
 
-    <!-- views will be injected here -->
-    <%--<div ui-view></div>--%>
-
-    <!-- apply our angular app -->
+<!-- apply our angular app -->
     <!-- CSS -->
     <spring:url value="/resources/css/app/style.css" var="styleCss"/>
     <spring:url value="/resources/css/core/bootstrap.css" var="bootstrapCss"/>
@@ -71,8 +55,6 @@
     <script src="${appJs}"></script>
     <script src="${controllersJs}"></script>
     <script src="${servicesJs}"></script>
-
-
 </body>
 
 </html>
