@@ -16,6 +16,9 @@ angular.module('boothApp', ['ngAnimate', 'ui.router'])
                         templateUrl : 'resources/template/booth.html',
                         controller  : 'BoothController'
                     },
+                    'carousel': {
+                        templateUrl : 'resources/template/carousel.html',
+                    },
                     'footer': {
                         templateUrl : 'resources/template/footer.html'
                     }

@@ -4,6 +4,10 @@
 <html lang="en">
 <head>
     <title>Ixxus Booth</title>
+    
+    <spring:url value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" var="jqueryURL" />
+    
+    <script src="${jqueryURL}"></script>
 
 </head>
 
@@ -16,11 +20,9 @@
     <div class="booth-content">
         <div class="content-frame" ui-view="content"></div>
     </div>
-
-    <div class="booth-carousel">
-        <div class="carousel-frame">
-            <h3 align="center">Here should be a carousel with important sliding data about Ixxus </h3>
-        </div>
+    
+	<div class="booth-carousel">
+        <div class="carousel-frame" ui-view="carousel"></div>
     </div>
 
     <div class="booth-footer">
@@ -43,10 +45,12 @@
     <spring:url value="/resources/js/core/angular.js" var="angJs" />
     <spring:url value="/resources/js/core/angular-ui-router.js" var="angUiRouterJs" />
     <spring:url value="/resources/js/core/angular-animate.js" var="angAnimateJs" />
-
+    <spring:url value="/resources/js/core/bootstrap.min.js" var="bootstrapMinJs" />
+    
     <script src="${angJs}"></script>
     <script src="${angUiRouterJs}"></script>
     <script src="${angAnimateJs}"></script>
+    <script src="${bootstrapMinJs}"></script>
 
     <spring:url value="/resources/js/app/app.js" var="appJs" />
     <spring:url value="/resources/js/app/controller/controllers.js" var="controllersJs" />
