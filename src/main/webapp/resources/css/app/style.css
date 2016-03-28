@@ -24,7 +24,7 @@ html,body {
     width: 100%;
     background: #E4F2D2;
     border-top: solid 1px #E6E6E6;
-    border-bottom: solid 1px #58595B;
+    border-bottom: solid 2px #E6E6E6;
 }
 
 .booth-carousel {
@@ -43,28 +43,43 @@ html,body {
 }
 
 /* form styling */
-#form-start {
-    /*background:#2f2f2f; */
-    margin-bottom: 20px;
-    border-radius: 5px;
+.form-start {
+    padding-top: 10em;
 }
 
-#form-start .page-header {
-    background: #151515;
-    margin: 0;
-    padding: 30px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.form-question {
+    padding-top: 1em;
+    font-size: 125%;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
-/*.row-footer {*/
-    /*padding: 15px 0 5px;*/
-    /*background: #58595B;*/
-    /*color: #CBCCCC;*/
-    /*width:20%;*/
-    /*height:100%;*/
+.form-radio {
+    padding-top: 1em;
+    font-size: 110%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
 
-/*}*/
+}
+
+.form-radio-option {
+    padding-top: 0.5em;
+}
+
+.form-button-back {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.form-button-next {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
 
 
 /* ANIMATION STYLINGS
@@ -78,6 +93,7 @@ html,body {
 
 #form-views {
     width: auto;
+    height: 400px;
 }
 
 /* basic styling for entering and leaving */

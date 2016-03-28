@@ -1,42 +1,39 @@
-<div class="row">
+<div class="row form-question">
     <div class="col-xs-12 col-sm-12">
-        <label>
-            333333 What's Your Console of Choice? 222What's Your Console of Choice? 222What's Your
-            Console of Choice? 222What's Your Console of Choice? 222What's Your Console of Choice?
-            222What's Your Console of Choice? 222
-        </label>
+        <label>Question 3</label>
+        <p>
+            The perfect coding language should, in your vision:
+        </p>
     </div>
 </div>
 
-<div class="row form-group form-question">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <div class="radio">
+<div class="row form-group form-radio">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="radio form-radio-option">
             <label>
                 <input type="radio" ng-model="formData.q3" value="A">
-                A
+                Allow anybody to program.
             </label>
         </div>
-        <div class="radio">
+        <div class="radio form-radio-option">
             <label>
                 <input type="radio" ng-model="formData.q3" value="B">
-                B
+                Allow specialists to best use the systems resources.
             </label>
         </div>
     </div>
 </div>
 
 <div class="row form-group">
-    <div class="col-xs-12 col-sm-3">
+    <div class="form-button-back">
         <button ng-model="button" class="btn btn-lg btn-info"
                 ui-sref="app.play.pers.pq2">
-            <span class="glyphicon glyphicon-circle-arrow-left"></span> Previous question </button>
+            <span class="glyphicon glyphicon-circle-arrow-left"></span> Back </button>
     </div>
-    <div class="col-xs-12 col-sm-4">
-    </div>
-    <div class="col-xs-12 col-sm-3">
+    <div class="form-button-next">
         <button ng-model="button" class="btn btn-lg btn-success"
                 ui-sref="app.play.pers.submit" ng-disabled="!formData.q3">
-            <strong>Next question</strong>
+            <strong> Next </strong>
             <span class="glyphicon glyphicon-circle-arrow-right"> </span></button>
     </div>
 </div>
