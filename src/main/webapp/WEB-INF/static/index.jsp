@@ -4,6 +4,10 @@
 <html lang="en">
 <head>
     <title>Ixxus Booth</title>
+    
+    <spring:url value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" var="jqueryURL" />
+    
+    <script src="${jqueryURL}"></script>
 
 </head>
 
@@ -16,29 +20,10 @@
     <div class="booth-content">
         <div class="content-frame" ui-view="content"></div>
     </div>
-
-    <div id="ixxusCarousel" class="booth-carousel carousel slide" data-ride="carousel">
-	    
-	    <div class="carousel-inner" role="listbox">
-		    <div class="item active">
-		    	<h3 align="center">Slide 1 about IXXUS</h3>
-		    </div>
-		
-		    <div class="item">
-		    	<h3 align="center">Slide 2 about IXXUS</h3>
-		    </div>
-		    
-		    <div class="item">
-		    	<h3 align="center">Slide 3 about IXXUS</h3>
-		    </div>
-		
-		    <div class="item">
-		    	<h3 align="center">Slide 4 about IXXUS</h3>
-		    </div>
-	    </div>
-
+    
+	<div class="booth-carousel">
+        <div class="carousel-frame" ui-view="carousel"></div>
     </div>
-
 
     <div class="booth-footer">
         <div ui-view="footer"></div>
@@ -61,9 +46,7 @@
     <spring:url value="/resources/js/core/angular-ui-router.js" var="angUiRouterJs" />
     <spring:url value="/resources/js/core/angular-animate.js" var="angAnimateJs" />
     <spring:url value="/resources/js/core/bootstrap.min.js" var="bootstrapMinJs" />
-	<spring:url value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" var="jqueryURL" />
     
-    <script src="${jqueryURL}"></script>
     <script src="${angJs}"></script>
     <script src="${angUiRouterJs}"></script>
     <script src="${angAnimateJs}"></script>
