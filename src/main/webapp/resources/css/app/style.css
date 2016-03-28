@@ -23,7 +23,8 @@ html,body {
     min-height:60%;
     width: 100%;
     background: #E4F2D2;
-
+    border-top: solid 1px #E6E6E6;
+    border-bottom: solid 1px #58595B;
 }
 
 .booth-carousel {
@@ -139,11 +140,32 @@ html,body {
 }
 
 .ixx-card {
-    min-height: 300px;
-    padding: 20px 8px 10px;
+    min-height: 400px;
+    padding-top: 10px;
     background: #fff;
     border-radius: 12px;
     text-align: center;
+
+    -webkit-box-shadow: 2px 1px 5px 1px rgba(194,194,194,1);
+    -moz-box-shadow: 2px 1px 5px 1px rgba(194,194,194,1);
+    box-shadow: 2px 1px 5px 1px rgba(194,194,194,1);
+}
+
+.ixx-card-title {
+    /*padding-top: 10px;*/
+    color: #58595B;
+}
+
+.ixx-card-icon {
+    padding: 15px 0 15px;
+}
+
+.ixx-card-description {
+    padding: 10px 10px 10px 10px;
+}
+
+.ixx-card-button {
+    padding-top: 10px;
 }
 
 /* ANIMATIONS
