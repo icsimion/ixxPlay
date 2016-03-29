@@ -52,6 +52,7 @@ html,body {
     font-size: 125%;
     text-align: center;
     font-family: Verdana, Geneva, sans-serif;
+    /*color: #58595B;*/
 }
 
 .form-radio {
@@ -59,7 +60,7 @@ html,body {
     font-size: 110%;
     font-family: Verdana, Geneva, sans-serif;
     font-weight: bold;
-
+    /*color: #58595B;*/
 }
 
 .form-radio-option {
@@ -76,6 +77,18 @@ html,body {
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+
+.form-submit {
+    padding-top: 7em;
+}
+
+.form-result {
+    /*padding-top: 1em;*/
+    /*font-size: 125%;*/
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    /*color: #58595B;*/
 }
 
 
