@@ -44,7 +44,11 @@ html,body {
 
 /* form styling */
 .form-start {
-    padding-top: 10em;
+    padding-top: 6em;
+}
+
+.disclaimer-start {
+    padding-top: 2em;
 }
 
 .form-question {
@@ -80,12 +84,12 @@ html,body {
 }
 
 .form-submit {
-    padding-top: 7em;
+    padding-top: 6em;
 }
 
 .form-result {
     /*padding-top: 1em;*/
-    /*font-size: 125%;*/
+    font-size: 13px;
     text-align: center;
     font-family: Verdana, Geneva, sans-serif;
     /*color: #58595B;*/
