@@ -1,0 +1,49 @@
+<div class="row form-question">
+    <div class="col-xs-12 col-sm-12">
+        <label>Question 12</label>
+        <p>
+            What do you consider to be the better implementation:
+        </p>
+    </div>
+</div>
+
+<div class="row form-group form-radio" style="padding-top: 0em;">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="radio form-radio-option" style="padding-top: 0em;">
+            <label>
+                <input type="radio" ng-model="formData.q12" value="A">
+                <pre>
+public static int addTwoNumbers(int firstNr, int secondNr ) {
+    return firstNr + int secondNr;
+}</pre>
+            </label>
+        </div>
+        <div class="radio form-radio-option">
+            <label>
+                <input type="radio" ng-model="formData.q12" value="B">
+                <pre>
+/* AddTwoNumbers - return - the sum of two integers */
+public static int addTwoNumbers(int firstNr, int secondN ){
+   // Calculate the sum of two integers
+   int theSum = firstNumber + secondNumber;
+   // Return the sum
+   return theSum;
+}</pre>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="row form-group">
+    <div class="form-button-back">
+        <button ng-model="button" class="btn btn-lg btn-info"
+                ui-sref="app.play.pers.pq11">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span> Back </button>
+    </div>
+    <div class="form-button-next">
+        <button ng-model="button" class="btn btn-lg btn-success"
+                ui-sref="app.play.pers.submit" ng-disabled="!formData.q12">
+            <strong> Next </strong>
+            <span class="glyphicon glyphicon-circle-arrow-right"> </span></button>
+    </div>
+</div>
