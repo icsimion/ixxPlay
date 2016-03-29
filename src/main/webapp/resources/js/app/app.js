@@ -34,6 +34,31 @@ angular.module('boothApp', ['ngAnimate', 'ui.router'])
                 }
             })
 
+            .state('app.info.jobs', {
+                url:'jobs',
+                views: {
+                    'content@': {
+                        templateUrl: 'resources/template/info/jobs.html'
+                    }
+                }
+            })
+
+            .state('app.info.jobs.job1', {
+                url: '/job1',
+                templateUrl: 'resources/template/info/jobs-1.html'
+            })
+
+
+
+            .state('app.info.about', {
+                url:'about',
+                views: {
+                    'content@': {
+                        templateUrl: 'resources/template/info/about.html'
+                    }
+                }
+            })
+
             .state('app.play', {
                 url:'play',
                 views: {
@@ -119,6 +144,48 @@ angular.module('boothApp', ['ngAnimate', 'ui.router'])
             .state('app.play.pers.submit', {
                 url: '/submit',
                 templateUrl: 'resources/template/play/personality-submit.html'
+            })
+
+            //game 1
+            .state('app.play.game1', {
+                url:'game1',
+                views: {
+                    'content@': {
+                        templateUrl: 'resources/template/play/game1-form.html',
+                        controller  : 'Game1Controller'
+                    }
+                }
+            })
+
+            .state('app.play.game1.gq1', {
+                url: '/g1q1',
+                templateUrl: 'resources/template/play/game1-q.html'
+            })
+
+            .state('app.play.game1.submit', {
+                url: '/submit',
+                templateUrl: 'resources/template/play/game1-submit.html'
+            })
+
+            //game 2
+            .state('app.play.game2', {
+                url:'game2',
+                views: {
+                    'content@': {
+                        templateUrl: 'resources/template/play/game2-form.html',
+                        controller  : 'Game2Controller'
+                    }
+                }
+            })
+
+            .state('app.play.game2.gq2', {
+                url: '/g2q1',
+                templateUrl: 'resources/template/play/game2-q.html'
+            })
+
+            .state('app.play.game2.submit', {
+                url: '/submit',
+                templateUrl: 'resources/template/play/game2-submit.html'
             })
 
         // catch all route

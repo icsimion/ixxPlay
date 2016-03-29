@@ -1,0 +1,36 @@
+<div class="text-center">
+
+    <div class="row form-submit" ng-show="isShowGame2Submit">
+        <div class="col-xs-12">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            <h3>Thank you for filling out the form!</h3>
+            <h4>Click <strong>Submit</strong> and find out if you are correct!</h4>
+        </div>
+        <div class="col-xs-12 submit-button">
+            <button type="submit" class="btn btn-lg btn-danger" ng-click="submitGame2Form()">
+                <span class="glyphicon glyphicon-transfer"></span> Submit
+            </button>
+        </div>
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-warning" ui-sref="app.play.game2.gq1">
+                <span class="glyphicon-circle-arrow-left"></span> Back
+            </button>
+        </div>
+    </div>
+
+    <div class="form-result" ng-show="isShowGame2Result">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <p><span class="glyphicon glyphicon-menu-down"></span> Results are in! <span
+                        class="glyphicon glyphicon-menu-down"></span></p>
+                <h4><strong>YOU ARE</strong></h4>
+                <h2 class="alert alert-info">{{game2Response.status}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <h3>{{game2Response.explanation}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

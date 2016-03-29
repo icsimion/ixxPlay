@@ -1,0 +1,45 @@
+<div class="ixx-booth">
+    <div class="container">
+
+        <div class="row content-frame">
+            <div class="col-sm-2">
+            </div>
+
+
+            <div class="col-sm-8">
+                <div class="form-start" ng-show="isShowGame2Start">
+                    <!-- the links to our nested states using relative paths -->
+                    <div id="status-buttons" class="text-center">
+                        <h4>Press <strong>Start test</strong> to begin the logical quiz</h4>
+                        <button class="btn btn-lg btn-success" ui-sref=".gq2"
+                                ng-click="startGame2Form()">
+                            <span class="glyphicon glyphicon-hand-up"></span> Start test
+                        </button>
+                    </div>
+                    <div class="disclaimer-start">
+                        <div class="alert alert-info alert-dismissible fade in" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>Disclaimer!</strong> The quiz consists of <strong>a single question</strong> that needs your
+                            answer. Take your time to focus and find the best solution for the problem given.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- use ng-submit to catch the form submission and use our Angular function -->
+                <form class="quiz-form" ng-submit="processGame2Form()" ng-show="isShowGame2Form">
+
+                    <!-- our nested state views will be injected here -->
+                    <div id="form-views" ui-view></div>
+                </form>
+
+            </div>
+
+            <div class="col-sm-2">
+            </div>
+
+        </div>
+    </div>
+</div>

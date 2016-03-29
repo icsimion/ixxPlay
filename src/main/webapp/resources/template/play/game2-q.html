@@ -1,8 +1,10 @@
 <div class="row form-question">
     <div class="col-xs-12 col-sm-12">
-        <label>Question 1</label>
+        <label>Question</label>
         <p>
-            You have been assigned a considerably complex task. How do you start your work on it?
+            Game 2 You have been assigned a considerably complex task. How do you start your work on do you start your work
+            on do you start your work on do you start your work on do you start your work on do you start your work
+            on it?
         </p>
     </div>
 </div>
@@ -11,13 +13,13 @@
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <div class="radio form-radio-option">
             <label>
-                <input type="radio" ng-model="formData.q1" value="A">
+                <input type="radio" ng-model="formData.g2q1" value="A">
                 Start by gathering as much information as possible from others, then decide the best way to approach the problem given.
             </label>
         </div>
         <div class="radio form-radio-option">
             <label>
-                <input type="radio" ng-model="formData.q1" value="B">
+                <input type="radio" ng-model="formData.g2q1" value="B">
                 Start coding and rapidly build a prototype as a partial solution on which to continue the implementation.
             </label>
         </div>
@@ -25,9 +27,9 @@
 </div>
 
 <div class="row form-group">
-    <div class="form-button-next">
+    <div class="col-xs-12 col-sm-2 col-sm-offset-5">
         <button ng-model="button" class="btn btn-lg btn-success"
-                ui-sref="app.play.pers.pq2" ng-disabled="!formData.q1">
+                ui-sref="app.play.game2.submit" ng-disabled="!formData.g2q1">
             <strong> Next </strong>
             <span class="glyphicon glyphicon-circle-arrow-right"> </span></button>
     </div>
