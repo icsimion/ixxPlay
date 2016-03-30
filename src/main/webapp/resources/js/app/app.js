@@ -48,6 +48,11 @@ angular.module('boothApp', ['ngAnimate', 'ui.router'])
                 templateUrl: 'resources/template/info/jobs-1.html'
             })
 
+            .state('app.info.jobs.job2', {
+                url: '/job2',
+                templateUrl: 'resources/template/info/jobs-2.html'
+            })
+
 
 
             .state('app.info.about', {

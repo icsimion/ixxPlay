@@ -100,8 +100,39 @@ html,body {
 }
 
 
+.frame-jobs > .frame-jobs-nav > li > a{
+    font-weight: bold;
+    font-size: 13px;
+    color: #58595B;
+}
 
+.frame-jobs > .frame-jobs-nav > li > a:hover{
+    /*font-weight: bold;*/
+    /*color: #34b425;*/
+    background-color: #78be1f;
+    border-radius: 4px;
 
+}
+
+.frame-jobs{
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+.job-view {
+    padding-top: 0.5em;
+}
+
+.job-introduction {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #78be1f;
+    color: #78be1f;
+}
 
 /* ANIMATION STYLINGS
 ============================================================================= */
