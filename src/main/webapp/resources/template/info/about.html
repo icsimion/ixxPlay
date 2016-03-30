@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    ABOUT US
-</body>
-</html>
+<div class="ixx-booth">
+    <div class="container">
+
+        <div class="row content-frame">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-5 frame-about">
+                <ul class="nav nav-pills frame-about-nav">
+                    <li role="presentation" class="active">
+                        <a ui-sref="." data-toggle="tab"><span class="glyphicon glyphicon-home"></span></a>
+                    </li>
+                    <li role="presentation">
+                        <a ui-sref=".about1" data-toggle="tab" class="nav-pill">About Ixxus</a>
+                    </li>
+                    <li role="presentation">
+                        <a ui-sref=".about2" data-toggle="tab">Products and Solutions</a>
+                    </li>
+                    <li role="presentation">
+                        <a ui-sref=".about3" data-toggle="tab">Our Clients</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="row content-frame col-xs-10 col-xs-offset-1">
+            <div class="about-view" ui-view></div>
+        </div>
+    </div>
+</div>
+</div>

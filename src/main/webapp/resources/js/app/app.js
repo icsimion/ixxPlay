@@ -53,7 +53,30 @@ angular.module('boothApp', ['ngAnimate', 'ui.router'])
                 templateUrl: 'resources/template/info/jobs-2.html'
             })
 
+            .state('app.info.jobs.job3', {
+                url: '/job3',
+                templateUrl: 'resources/template/info/jobs-3.html'
+            })
 
+            .state('app.info.jobs.job4', {
+                url: '/job42',
+                templateUrl: 'resources/template/info/jobs-4.html'
+            })
+
+            .state('app.info.jobs.job5', {
+                url: '/job5',
+                templateUrl: 'resources/template/info/jobs-5.html'
+            })
+
+            .state('app.info.jobs.job6', {
+                url: '/job6',
+                templateUrl: 'resources/template/info/jobs-6.html'
+            })
+
+            .state('app.info.jobs.job7', {
+                url: '/job7',
+                templateUrl: 'resources/template/info/jobs-7.html'
+            })
 
             .state('app.info.about', {
                 url:'about',
@@ -62,6 +85,21 @@ angular.module('boothApp', ['ngAnimate', 'ui.router'])
                         templateUrl: 'resources/template/info/about.html'
                     }
                 }
+            })
+
+            .state('app.info.about.about1', {
+                url: '/about1',
+                templateUrl: 'resources/template/info/about-1.html'
+            })
+
+            .state('app.info.about.about2', {
+                url: '/about2',
+                templateUrl: 'resources/template/info/about-2.html'
+            })
+
+            .state('app.info.about.about3', {
+                url: '/about3',
+                templateUrl: 'resources/template/info/about-3.html'
             })
 
             .state('app.play', {

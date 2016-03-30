@@ -21,25 +21,36 @@ html,body {
 .booth-content {
     height:60%;
     min-height:60%;
+    /*min-height:450px;*/
     width: 100%;
-    background: #E4F2D2;
-    border-top: solid 1px #E6E6E6;
-    border-bottom: solid 2px #E6E6E6;
-}
+    background: rgb(171, 218, 113);
+    border-top: solid 2px #79AD3A;
+    border-bottom: solid 2px #ACAEB1;}
 
 .booth-carousel {
-    min-height:7%;
+    /*min-height:55px;*/
+    min-height:10%;
     width: 100%;
-    /*background: #47a410;*/
-
+    line-height: 15px;
+    color: #58595B;
 }
 
 .booth-footer {
     min-height:10%;
     width: 100%;
-    /*padding: 15px 0 5px;*/
     background: #58595B;
     color: #CBCCCC;
+}
+
+.carousel-quote {
+    padding-top: 0.7em;
+    font-size: 15px;
+    color: #538416;
+}
+
+.carousel-author {
+    font-size: 14px;
+    padding: 0px;
 }
 
 /* form styling */
@@ -99,6 +110,11 @@ html,body {
     padding: 1em;
 }
 
+.frame-jobs{
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
 
 .frame-jobs > .frame-jobs-nav > li > a{
     font-weight: bold;
@@ -107,16 +123,36 @@ html,body {
 }
 
 .frame-jobs > .frame-jobs-nav > li > a:hover{
-    /*font-weight: bold;*/
-    /*color: #34b425;*/
     background-color: #78be1f;
     border-radius: 4px;
 
 }
 
-.frame-jobs{
+.frame-about{
     background-color: #f5f5f5;
     border-radius: 12px;
+}
+
+.frame-about > .frame-about-nav > li > a{
+    font-weight: bold;
+    font-size: 13px;
+    color: #58595B;
+}
+
+.frame-about > .frame-about-nav > li > a:hover{
+    background-color: #78be1f;
+    border-radius: 4px;
+}
+
+.about-clients-tab {
+    margin-top: 1em;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.about-tab {
+    margin-top: 1em;
+    font-weight: bold;
 }
 
 .job-view {
@@ -124,14 +160,14 @@ html,body {
 }
 
 .job-introduction {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    text-decoration: underline;
-    text-decoration-color: #78be1f;
-    color: #78be1f;
+}
+
+.job-details-headline {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* ANIMATION STYLINGS
@@ -177,13 +213,11 @@ html,body {
 /* CARDS
 ============================================================================= */
 .header-frame {
-    /*background-color: #eee;*/
-    height: 100px;
+    color: #58595B;
 }
 
-.header-frame {
-    /*background-color: #eee;*/
-    height: 100px;
+.ixxus-banner {
+    margin: 0 auto;
 }
 
 .content-frame {
@@ -211,12 +245,12 @@ html,body {
     min-height: 400px;
     padding-top: 10px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 10px 10px 15px 15px;
     text-align: center;
 
-    -webkit-box-shadow: 2px 1px 5px 1px rgba(194,194,194,1);
-    -moz-box-shadow: 2px 1px 5px 1px rgba(194,194,194,1);
-    box-shadow: 2px 1px 5px 1px rgba(194,194,194,1);
+    -webkit-box-shadow: 3px 1px 5px 1px rgb(53, 130, 30);
+    -moz-box-shadow: 3px 1px 5px 1px rgb(53, 130, 30);
+    box-shadow: 3px 1px 5px 1px rgb(53, 130, 30);
 }
 
 .ixx-card-title {

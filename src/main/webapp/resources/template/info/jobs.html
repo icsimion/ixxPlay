@@ -1,48 +1,38 @@
 <div class="ixx-booth">
     <div class="container">
 
-        <div class="row content-frame">
-            <div class="col-sm-1">
-            </div>
-
-            <div class="col-sm-12">
-                <div class="container frame-jobs">
-                    <ul class="nav nav-pills frame-jobs-nav">
-                        <li role="presentation" class="active">
-                            <a ui-sref="." data-toggle="tab"><span class="glyphicon glyphicon-home"></span></a>
-                        </li>
-                        <li role="presentation">
-                            <a ui-sref=".job1" data-toggle="tab" class="nav-pill">Java Developer</a>
-                        </li>
-                        <li role="presentation">
-                            <a ui-sref=".job2" data-toggle="tab">Senior Java Developer</a>
-                        </li>
-                        <li role="presentation">
-                            <a ui-sref=".job3" data-toggle="tab">UI Developer</a>
-                        </li>
-                        <li role="presentation">
-                            <a ui-sref=".job4" data-toggle="tab">Technical Architect</a>
-                        </li>
-                        <li role="presentation">
-                            <a ui-sref=".job5" data-toggle="tab">Test Automation Specialist</a>
-                        </li>
-                        <li role="presentation">
-                            <a ui-sref=".job6" data-toggle="tab">Software Tester</a>
-                        </li>
-                        <li role="presentation">
-                            <a ui-sref=".job7" data-toggle="tab">Senior Software Tester</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-sm-10 col-sm-offset-1">
-                <div class="job-view" ui-view></div>
-            </div>
-
-            <div class="col-sm-1">
-            </div>
-
+        <div class="row frame-jobs content-frame col-sm-12">
+            <ul class="nav nav-pills frame-jobs-nav">
+                <li role="presentation" class="active">
+                    <a ui-sref="." data-toggle="tab"><span class="glyphicon glyphicon-home"></span></a>
+                </li>
+                <li role="presentation">
+                    <a ui-sref=".job1" data-toggle="tab" class="nav-pill">Java Developer</a>
+                </li>
+                <li role="presentation">
+                    <a ui-sref=".job2" data-toggle="tab">Senior Java Developer</a>
+                </li>
+                <li role="presentation">
+                    <a ui-sref=".job3" data-toggle="tab">UI Developer</a>
+                </li>
+                <li role="presentation">
+                    <a ui-sref=".job4" data-toggle="tab">Technical Architect</a>
+                </li>
+                <li role="presentation">
+                    <a ui-sref=".job5" data-toggle="tab">Test Automation Specialist</a>
+                </li>
+                <li role="presentation">
+                    <a ui-sref=".job6" data-toggle="tab">Software Tester</a>
+                </li>
+                <li role="presentation">
+                    <a ui-sref=".job7" data-toggle="tab">Senior Software Tester</a>
+                </li>
+            </ul>
         </div>
+        <div class="row content-frame col-xs-12">
+            <div class="job-view" ui-view></div>
+        </div>
+
     </div>
+</div>
 </div>
