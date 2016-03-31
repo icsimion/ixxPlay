@@ -3,7 +3,7 @@ angular.module('boothApp')
         var personalityService = {
             async: function(data) {
                 // $http returns a promise, which has a then function, which also returns a promise
-                var promise = $http.post('/personality', data).then(function (response) {
+                var promise = $http.post('personality', data).then(function (response) {
                     return response.data;
                 });
                 // Return the promise to the controller
@@ -17,7 +17,7 @@ angular.module('boothApp')
         var game1Service = {
             async: function(data) {
                 // $http returns a promise, which has a then function, which also returns a promise
-                var promise = $http.post('/game1', data).then(function (response) {
+                var promise = $http.post('game1', data).then(function (response) {
                     return response.data;
                 });
                 // Return the promise to the controller
@@ -31,7 +31,7 @@ angular.module('boothApp')
         var game2Service = {
             async: function(data) {
                 // $http returns a promise, which has a then function, which also returns a promise
-                var promise = $http.post('/game2', data).then(function (response) {
+                var promise = $http.post('game2', data).then(function (response) {
                     return response.data;
                 });
                 // Return the promise to the controller
